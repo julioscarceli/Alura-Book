@@ -1,8 +1,101 @@
 primeiros passos
-Acessar e visualizar o projeto no Figma;
-Captar informações como as cores dos elementos no Figma;
-Começar a construir um projeto HTML;
-Criar variáveis CSS;
-Usar a extensão live-server;
-Aplicar o reset.css.
+-Acessar e visualizar o projeto no Figma;
+-Captar informações como as cores dos elementos no Figma;
+-Começar a construir um projeto HTML;
+-Criar variáveis CSS;
+-Usar a extensão live-server;
+-Aplicar o reset.css.
 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2
+-Criei todo o header 
+-Coloquei duas div class "container" para separar os icones da direita e os icones da esquerda 
+-Estilizei os icones com espaçamento e tamanho usando flex e justify content (header.css)
+-Para fazer o menu hamburguer funcionar dessa vez nao usei JS, fiz uma lógica com checkbox no proprio HTML  segue codigo com input e label com lista abaixo =>
+
+
+          <input type="checkbox" id="menu" class="container__botao">
+
+            <label for="menu">
+            <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">WEBSITE ECCOMERCE</a>
+                    <li>
+
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">CRM</a>
+                    <li>
+
+                    <li class="lista-menu__item">
+                       <a href="#" class="lista-menu__link">LANDING PAGE</a>
+                    <li>
+
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">SITE INSTITUCIONAL</a>
+                    <li>
+
+
+- Proximo passo estilizei e fiz as configurações no menu hamburguer e nos links dentro dele
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3
+-Depois de configurar todo header, criei uma section para ir pra proxima parte do projeto, que é o banner no HTML section 
+<section class="banner">
+
+- Coloquei H2 , paragrafo e para o campo de pesquisa do banner criei um input type = "search"
+
+-Estilizei todo o banner em banner.css
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4 
+- Criei uma nova section para fazer o carrossel 
+-Coloquei um H2 juntamente com sua classe para estilização 
+-Abri uma pasta dentro de styles com o arquivo carrossel.css para estilizar essa section 
+-importei esse arquivo carrossel.css dentro do styles.css
+-Baixei o plugin swiper.js no site swiper.js.com para fazer o carrossel  joguei esse codigo copiado no proprio site no html para fazer funcionar o swiper  =>> 
+
+
+       <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apacheKafka"></div>
+      <div class="swiper-slide"><img src="img/Gestão.svg" alt="Livro sobre Gestão"></div>
+      <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança"></div>
+      <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
+      <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol"></div>
+      <div class="swiper-slide"><img src="img/Nodejs.svg" alt="Livro sobre Node.js"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+    </section>
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> 
+
+    VER NO HTML 
+
+
+    - baixei as imagens que vão no carrossel no figma, exportei em svg as imagens dos 6 livros para jogar no codigo
+    -

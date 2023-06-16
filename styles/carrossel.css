@@ -1,0 +1,24 @@
+.carrossel__titulo {
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;/* todas letras em maiusculo */
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0; /* lembrar de comparar com relogio as posições */
+}
+
+
+.swiper-slide img {
+    width: 100%;  /* as imagens do carrossel ficaram certinha na largura da tela */
+}
+
+.swiper-button-prev, .swiper-button-next {/* essas classes correspondem as tags dos botões de seta pra passar a imagem pro lado */
+    display: none; /* o que fiz aqui foi tirar essas setas da tela para deixar a rolagem sem seta */
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;  /* primeiro valor = topo e baixo / segundo valor = direita e esquerda, para definir margem e paddings. */
+}
+
