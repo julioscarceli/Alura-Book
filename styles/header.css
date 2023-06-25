@@ -65,3 +65,7 @@
 .container__botao {  /* para não aparecer o botão de ticar do checkbox (aquele que serve para habilitar o menu)*/
     display: none;
 }
+
+@media screen and (min-widht) {
+    
+}

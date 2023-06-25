@@ -22,3 +22,74 @@
     margin: .5em 0;  /* primeiro valor = topo e baixo / segundo valor = direita e esquerda, para definir margem e paddings. */
 }
 
+
+
+
+ /*  <!--SEPARAÇÃO DE BLOCO CARD-->    <!-- SEPARAÇÃO DE BLOCO CARD -->     <!-- SEPARAÇÃO DE BLOCO CARD -->     <!--SEPARAÇÃO DE BLOCO CARD -->  */
+
+
+
+ 
+.card {
+    background-color: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+
+
+
+
+.card__descrição {
+    display: flex;/* um do lado do outro*/
+    justify-content: space-between; /*espaçamento*/
+    margin-bottom: 0.5em;
+}
+
+.card__botoes {
+    display: flex;/* um do lado do outro*/
+    justify-content: space-between; /*espaçamento*/
+}
+
+.botoes {
+    display: flex; /* um do lado do outro*/
+}
+
+.descrição__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descrição__titulo-livro {
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;  /* serviu para afastar um elemento do outro dentro da div principal*/
+}
+
+.descrição__texto {
+    font-size: 14px;
+}
+
+.descrição__lista li {
+    margin:0.5em;
+}
+
+.botoes__item {
+    margin: 0 0.5em;
+}
+
+.botoes__ancora {
+    background-color: var(--laranja);
+    padding: 0.5em 0.5em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.descrição__imagem {
+    width: 130px;
+    
+}
