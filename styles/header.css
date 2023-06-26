@@ -66,6 +66,56 @@
     display: none;
 }
 
-@media screen and (min-widht) {
+.container__titulo {
+    display: none;  /* para desaparecer quando a media querie é menor que 1024, quando abaixa a responsividade pra menos de 1024 some o AJS*/
+}
+
+.opcoes {
+    display: none; /* para desaparecer quando a media querie é menor que 1024, quando abaixa a responsividade pra menos de 1024 some as opções do header*/
+}
+
+@media screen and (min-width: 1024px) {
     
+    .container__titulo , 
+    .container__titulo-negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo-negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opcoes__botao:checked ~ .lista-menu {  /* serviu para se caso tiver ticado o check box(checked ~) ele vai ter um display block na lista menu, então aparece a lista se caso ticar o checkbox.*/
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao {   /* serviu para ocultar o checkbox do input da tela, pra quando clicar em categorias ele ja abrir o menu hamburguer*/
+        display: none;
+    }
 }
